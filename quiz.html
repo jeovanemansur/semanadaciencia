@@ -1,0 +1,309 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+
+<head>
+
+<meta charset="UTF-8">
+<meta name="viewport" content="width=device-width, initial-scale=1.0">
+
+<title>Quiz Ciência Delas - SNCT 2026</title>
+
+<link rel="stylesheet" href="css/quiz.css">
+
+</head>
+
+
+<body>
+
+
+<!-- LOGOS -->
+
+<div class="logos-topo">
+
+    <img src="imagens/logo_semana_ciencia.png"
+    alt="Semana Nacional de Ciência e Tecnologia">
+
+    <img src="imagens/logo_iftm.jpg"
+    alt="IFTM">
+
+</div>
+
+
+
+
+
+<!-- MENU -->
+
+<header>
+
+
+<div class="logo">
+
+23ª SEMANA NACIONAL DE 
+<span>
+CIÊNCIA E TECNOLOGIA
+</span>
+
+</div>
+
+
+
+<nav>
+
+<a href="index.html">
+Início
+</a>
+
+
+<a href="index.html#cientistas">
+Cientistas
+</a>
+
+
+<a href="quiz.html">
+Quiz
+</a>
+
+
+</nav>
+
+
+</header>
+
+
+
+
+
+
+<!-- HERO QUIZ -->
+
+
+<section class="hero">
+
+
+<div class="hero-text">
+
+
+<span class="tag">
+
+CIÊNCIA DELAS • TECNOLOGIA E INOVAÇÃO
+
+</span>
+
+
+
+<h1>
+
+Descubra seu nível de conhecimento em informática
+
+</h1>
+
+
+
+<p>
+
+Responda perguntas sobre tecnologia, programação
+e computação e descubra quanto você conhece
+sobre o mundo digital.
+
+</p>
+
+
+
+<button class="btn"
+onclick="iniciarQuiz()">
+
+Começar quiz
+
+</button>
+
+
+</div>
+
+
+
+
+
+<div class="imagem-quiz">
+
+
+<img src="imagens/imagem_mulheres.jpg"
+alt="Mulheres na ciência">
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- ÁREA DO QUIZ -->
+
+
+<section class="area-quiz"
+id="areaQuiz">
+
+
+<div class="quiz-card">
+
+
+<div class="progresso">
+
+<span id="contador">
+Pergunta 1 de 10
+</span>
+
+
+<div class="barra">
+
+<div id="barraProgresso"></div>
+
+</div>
+
+</div>
+
+
+
+
+
+
+<h2 id="pergunta">
+
+Clique em começar para iniciar
+
+</h2>
+
+
+
+
+
+<div id="opcoes"
+class="opcoes">
+
+
+</div>
+
+
+
+
+
+
+<button class="btn"
+id="proximo"
+onclick="proximaPergunta()"
+style="display:none">
+
+Próxima pergunta
+
+</button>
+
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+<!-- RESULTADO -->
+
+
+<section class="resultado"
+id="resultado"
+style="display:none">
+
+
+<div class="resultado-card">
+
+
+<h2>
+
+Seu resultado
+
+</h2>
+
+
+<h3 id="tituloResultado">
+
+</h3>
+
+
+<p id="textoResultado">
+
+</p>
+
+
+
+<button class="btn"
+onclick="reiniciarQuiz()">
+
+Fazer novamente
+
+</button>
+
+
+</div>
+
+
+</section>
+
+
+
+
+
+
+
+
+
+<footer>
+
+
+<p>
+
+Site produzido pelos alunos do curso
+
+<strong>
+Programador Web
+</strong>
+
+</p>
+
+
+
+<p>
+
+Semana Nacional de Ciência e Tecnologia 2026 |
+
+IFTM - Unidade Remota Perdizes
+
+</p>
+
+
+</footer>
+
+
+
+
+
+
+
+<script src="js/perguntas.js"></script>
+
+<script src="js/quiz.js"></script>
+
+
+</body>
+
+</html>
